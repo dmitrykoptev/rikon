@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.note {
+  width: 100%;
+  height: fit-content;
+  padding: 3rem 6rem;
+  border: 2px solid $color-primary;
+  border-radius: 2rem;
+  box-shadow: 0 4px 20px 4px #efefef;
+  color: $color-black;
+  position: relative;
+  margin-bottom: 1rem;
+
+  break-inside: avoid;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: $font-size-large;
+  }
+
+  .date {
+    margin-top: 1rem;
+    text-align: end;
+    font-size: $font-size-small;
+    font-weight: 600;
+    color: #888;
+  }
+
+  .delete {
+    display: block;
+    text-align: center;
+    height: 2.8rem;
+    width: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-red-md;
+    border: 2px solid $color-red-md;
+    border-radius: 50%;
+    transition: all 0.4s;
+
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $color-red-dark;
+      border-color: $color-red-dark;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
