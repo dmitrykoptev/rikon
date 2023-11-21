@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classes from "./NotesList.module.scss";
 import Note from "./Note";
 import { INote } from "../../models/Note";
